@@ -1,0 +1,120 @@
+/* global style  */
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Nutmeg:hsl(14, 45%, 36%);
+    --dark: hsl(24, 5%, 18%);
+    background-color: hsl(330, 100%, 98%);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    font-family: "Outfit", sans-serif;
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+}
+
+h1, p, span, th{
+    color: var(-dark);
+}
+
+h2, li::marker, th{
+    color: var(--Nutmeg);
+}
+
+span{
+    font-weight: 700;
+}
+
+hr{
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+.container .recipe{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-block: 50px;
+}
+/*end  global style  */
+
+
+/* start image section  */
+.container .recipe .image{
+    width: 100%;
+}
+
+.container .recipe .image img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* end image section  */
+
+
+/* start prepare section  */
+.container .recipe .prepare{
+    padding: 20px;
+}
+
+.container .recipe .prepare .inner{
+    background-color: hsl(330, 100%, 98%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container .recipe .prepare .inner .rose{
+    color: hsl(332, 51%, 32%);
+}
+
+.container .recipe .prepare ul li{
+    padding: 5px 15px;
+}
+/* end prepare section  */
+
+
+/* start ingredients section  */
+.container .recipe .ingredients ul li{
+    padding: 5px 15px;
+}
+/* end ingredients section  */
+
+
+/* start instructions section  */
+.container .recipe .instructions ol li{
+    padding: 5px 15px;
+}
+/* end instructions section  */
+
+
+/* start nutrition section  */
+.container .recipe .nutrition table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.container .recipe .nutrition table tr, td{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+}
+
+.container .recipe .nutrition table th{
+    text-align: start;
+}
+/* end nutrition section  */
+
+
+/* media small screen  */
+@media(max-width:700px){
+    .container{
+        width: 100%;
+    }
+}
+
